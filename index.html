@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>102 Etiquetas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>102 Etiquetas HTML</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre de la Etiqueta</th>
+                <th>Descripción</th>
+                <th>Ejemplo de Uso</th>
+                <th>Elemento Adicional</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Define un hipervínculo. Se utiliza para enlazar una página a otra o un recurso.</td>
+                <td>&lt;a href="https://www.example.com"&gt;Visita Ejemplo&lt;/a&gt;</td>
+                <td>Se puede agregar el atributo <code>target="_blank"</code> para abrir el enlace en una nueva pestaña.</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Define un párrafo de texto.</td>
+                <td>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</td>
+                <td>Puede contener otros elementos en línea como <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Incrusta una imagen en la página.</td>
+                <td>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;</td>
+                <td>Importante incluir el atributo <code>alt</code> para accesibilidad.</td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>Define una sección o contenedor en el documento.</td>
+                <td>&lt;div&gt;Contenido del div&lt;/div&gt;</td>
+                <td>Usualmente usado para aplicar estilos o agrupar otros elementos.</td>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>Define el encabezado más importante en la página.</td>
+                <td>&lt;h1&gt;Este es un Encabezado&lt;/h1&gt;</td>
+                <td>Los encabezados van desde <code>&lt;h1&gt;</code> (más importante) hasta <code>&lt;h6&gt;</code> (menos importante).</td>
+            </tr>
+            <tr></tr>
+                <td>&lt;h2&gt;</td>
+                <td>Define un subtítulo o un encabezado de menor importancia que <code>&lt;h1&gt;</code>.</td>
+                <td>&lt;h2&gt;Este es un subtítulo&lt;/h2&gt;</td>
+                <td>Similar a <code>&lt;h1&gt;</code>, pero menos importante.</td>
+            </tr>
+            <tr>
+                <td>&lt;h3&gt;</td>
+                <td>Define un encabezado de nivel 3.</td>
+                <td>&lt;h3&gt;Encabezado de nivel 3&lt;/h3&gt;</td>
+                <td>Se utiliza para dividir contenido en secciones menores.</td>
+            </tr>
+            <tr>
+                <td>&lt;h4&gt;</td>
+                <td>Define un encabezado de nivel 4.</td>
+                <td>&lt;h4&gt;Encabezado de nivel 4&lt;/h4&gt;</td>
+                <td>Menos importante que <code>&lt;h3&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;h5&gt;</td>
+                <td>Define un encabezado de nivel 5.</td>
+                <td>&lt;h5&gt;Encabezado de nivel 5&lt;/h5&gt;</td>
+                <td>Menos importante que <code>&lt;h4&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;h6&gt;</td>
+                <td>Define un encabezado de nivel 6.</td>
+                <td>&lt;h6&gt;Encabezado de nivel 6&lt;/h6&gt;</td>
+                <td>El encabezado de menor importancia.</td>
+            </tr>
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Resalta el texto con importancia fuerte.</td>
+                <td>&lt;strong&gt;Texto resaltado&lt;/strong&gt;</td>
+                <td>El texto aparece en negrita.</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>Resalta el texto con énfasis.</td>
+                <td>&lt;em&gt;Texto con énfasis&lt;/em&gt;</td>
+                <td>El texto aparece en cursiva.</td>
+            </tr>
+            <tr>
+                <td>&lt;span&gt;</td>
+                <td>Contenedor en línea para agrupar texto o elementos para aplicar estilos.</td>
+                <td>&lt;span style="color:red;"&gt;Texto rojo&lt;/span&gt;</td>
+                <td>Utilizado para aplicar estilos específicos en línea.</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>Inserta un salto de línea.</td>
+                <td>Primera línea&lt;br&gt;Segunda línea</td>
+                <td>No requiere una etiqueta de cierre.</td>
+            </tr>
+            <tr>
+                <td>&lt;hr&gt;</td>
+                <td>Inserta una línea horizontal para separar contenido.</td>
+                <td>Contenido antes&lt;hr&gt;Contenido después</td>
+                <td>No requiere una etiqueta de cierre.</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;</td>
+                <td>Define una lista no ordenada.</td>
+                <td>&lt;ul&gt;&lt;li&gt;Elemento 1&lt;/li&gt;&lt;li&gt;Elemento 2&lt;/li&gt;&lt;/ul&gt;</td>
+                <td>Los elementos de la lista son precedidos por viñetas.</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt;</td>
+                <td>Define una lista ordenada.</td>
+                <td>&lt;ol&gt;&lt;li&gt;Elemento 1&lt;/li&gt;&lt;li&gt;Elemento 2&lt;/li&gt;&lt;/ol&gt;</td>
+                <td>Los elementos de la lista están numerados.</td>
+            </tr>
+            <tr>
+                <td>&lt;li&gt;</td>
+                <td>Define un elemento de una lista.</td>
+                <td>&lt;ul&gt;&lt;li&gt;Elemento de lista&lt;/li&gt;&lt;/ul&gt;</td>
+                <td>Se utiliza dentro de <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Define una tabla en el documento.</td>
+                <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Celda&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+                <td>Utilizada para organizar datos en filas y columnas.</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Define una fila en una tabla.</td>
+                <td>&lt;tr&gt;&lt;td&gt;Celda 1&lt;/td&gt;&lt;td&gt;Celda 2&lt;/td&gt;&lt;/tr&gt;</td>
+                <td>Debe estar dentro de <code>&lt;table&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Define una celda en una tabla.</td>
+                <td>&lt;tr&gt;&lt;td&gt;Celda&lt;/td&gt;&lt;/tr&gt;</td>
+                <td>Debe estar dentro de <code>&lt;tr&gt;</code>.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Define un encabezado de una celda en una tabla.</td>
+                <td>&lt;th&gt;Encabezado&lt;/th&gt;</td>
+                <td>El contenido suele aparecer en negrita y centrado.</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Define un grupo de filas de encabezado en una tabla.</td>
+                <td>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Encabezado&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</td>
+                <td>Agrupa los encabezados en tablas complejas.</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>Define el cuerpo principal de una tabla.</td>
+                <td>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Datos&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</td>
+                <td>Separa el cuerpo de la tabla de su encabezado y pie de página.</td>
+            </tr>
+            <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>Define un grupo de filas de pie de página en una tabla.</td>
+                <td>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Pie de página&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</td>
+                <td>Utilizado para agregar un resumen o totales.</td>
+            </tr>
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Define un formulario para la entrada de datos.</td>
+                <td>&lt;form action="/submit"&gt;&lt;input type="text"&gt;&lt;/form&gt;</td>
+                <td>Debe contener elementos de entrada como <code>&lt;input&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>Define un control de entrada de datos.</td>
+                <td>&lt;input type="text" name="nombre"&gt;</td>
+                <td>Puedes especificar diferentes tipos como <code>text</code>, <code>password</code>, <code>email</code>, etc.</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Define un área de texto multilinea.</td>
+                <td>&lt;textarea&gt;Texto aquí&lt;/textarea&gt;</td>
+                <td>Utilizada para entrada de datos largos.</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Define un botón clickable.</td>
+                <td>&lt;button&gt;Enviar&lt;/button&gt;</td>
+                <td>Puedes usar <code>type="submit"</code> para enviar un formulario.</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Define un menú desplegable.</td>
+                <td>&lt;select&gt;&lt;option&gt;Opción 1&lt;/option&gt;&lt;/select&gt;</td>
+                <td>Los elementos <code>&lt;option&gt;</code> definen las opciones del menú.</td>
+            </tr>
+            <tr>
+                <td>&lt;option&gt;</td>
+                <td>Define una opción en un menú desplegable.</td>
+                <td>&lt;option value="1"&gt;Opción 1&lt;/option&gt;</td>
+                <td>Utilizado dentro de <code>&lt;select&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Define una etiqueta para un control de formulario.</td>
+                <td>&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;&lt;input id="nombre" type="text"&gt;</td>
+                <td>Mejora la accesibilidad al asociar etiquetas con controles.</td>
+            </tr>
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Agrupa controles de formulario relacionados.</td>
+                <td>&lt;fieldset&gt;&lt;legend&gt;Información Personal&lt;/legend&gt;&lt;/fieldset&gt;</td>
+                <td>Puede contener un <code>&lt;legend&gt;</code> para describir el grupo.</td>
+            </tr>
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Define un título para un grupo de controles dentro de un <code>&lt;fieldset&gt;</code>.</td>
+                <td>&lt;fieldset&gt;&lt;legend&gt;Información Personal&lt;/legend&gt;&lt;input type="text"&gt;&lt;/fieldset&gt;</td>
+                <td>Mejora la organización y legibilidad de formularios complejos.</td>
+            </tr>
+            <tr>
+                <td>&lt;header&gt;</td>
+                <td>Define un encabezado para un documento o una sección.</td>
+                <td>&lt;header&gt;Este es el encabezado&lt;/header&gt;</td>
+                <td>Puede contener elementos como logos, menús de navegación, etc.</td>
+            </tr>
+            <tr>
+                <td>&lt;footer&gt;</td>
+                <td>Define el pie de página para un documento o una sección.</td>
+                <td>&lt;footer&gt;Este es el pie de página&lt;/footer&gt;</td>
+                <td>Puede contener información como autor, derechos de autor, enlaces.</td>
+            </tr>
+            <tr>
+                <td>&lt;article&gt;</td>
+                <td>Define un contenido independiente, como una publicación de blog o un artículo de noticias.</td>
+                <td>&lt;article&gt;Contenido del artículo&lt;/article&gt;</td>
+                <td>Suele estar acompañado por un <code>&lt;header&gt;</code> y <code>&lt;footer&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;section&gt;</td>
+                <td>Define una sección en un documento.</td>
+                <td>&lt;section&gt;Contenido de la sección&lt;/section&gt;</td>
+                <td>Útil para dividir contenido en partes temáticas.</td>
+            </tr>
+            <tr>
+                <td>&lt;nav&gt;</td>
+                <td>Define un conjunto de enlaces de navegación.</td>
+                <td>&lt;nav&gt;&lt;a href="#home"&gt;Inicio&lt;/a&gt;&lt;a href="#about"&gt;Sobre Nosotros&lt;/a&gt;&lt;/nav&gt;</td>
+                <td>Debe contener solo enlaces de navegación.</td>
+            </tr>
+            <tr>
+                <td>&lt;aside&gt;</td>
+                <td>Define contenido adicional que se sitúa al margen del contenido principal.</td>
+                <td>&lt;aside&gt;Este es un contenido adicional.&lt;/aside&gt;</td>
+                <td>Usualmente se coloca en barras laterales.</td>
+            </tr>
+            <tr>
+                <td>&lt;main&gt;</td>
+                <td>Define el contenido principal del documento.</td>
+                <td>&lt;main&gt;Este es el contenido principal&lt;/main&gt;</td>
+                <td>Solo debe haber un <code>&lt;main&gt;</code> por documento.</td>
+            </tr>
+            <tr>
+                <td>&lt;figure&gt;</td>
+                <td>Define contenido ilustrativo, como una imagen, gráfico o código.</td>
+                <td>&lt;figure&gt;&lt;img src="imagen.jpg" alt="Descripción"&gt;&lt;figcaption&gt;Descripción&lt;/figcaption&gt;&lt;/figure&gt;</td>
+                <td>Suele ir acompañado de un <code>&lt;figcaption&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;figcaption&gt;</td>
+                <td>Proporciona una leyenda o descripción para el contenido dentro de un <code>&lt;figure&gt;</code>.</td>
+                <td>&lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;</td>
+                <td>Debe estar dentro de un <code>&lt;figure&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;audio&gt;</td>
+                <td>Incrusta un contenido de audio en el documento.</td>
+                <td>&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</td>
+                <td>Incluye controles de reproducción.</td>
+            </tr>
+            <tr>
+                <td>&lt;video&gt;</td>
+                <td>Incrusta un contenido de video en el documento.</td>
+                <td>&lt;video width="320" height="240" controls&gt;&lt;source src="video.mp4" type="video/mp4"&gt;&lt;/video&gt;</td>
+                <td>Puede incluir subtítulos mediante la etiqueta <code>&lt;track&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;canvas&gt;</td>
+                <td>Proporciona un área de dibujo en la cual se puede renderizar gráficos mediante scripts.</td>
+                <td>&lt;canvas id="miCanvas"&gt;&lt;/canvas&gt;</td>
+                <td>Se utiliza con JavaScript para dibujar gráficos dinámicos.</td>
+            </tr>
+            <tr>
+                <td>&lt;svg&gt;</td>
+                <td>Define gráficos vectoriales escalables.</td>
+                <td>&lt;svg width="100" height="100"&gt;&lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;&lt;/svg&gt;</td>
+                <td>Permite definir figuras geométricas y gráficos 2D.</td>
+            </tr>
+            <tr>
+                <td>&lt;iframe&gt;</td>
+                <td>Incrusta otro documento HTML dentro del documento actual.</td>
+                <td>&lt;iframe src="pagina.html"&gt;&lt;/iframe&gt;</td>
+                <td>Se usa comúnmente para incrustar vídeos, mapas, o contenido externo.</td>
+            </tr>
+            <tr>
+                <td>&lt;meta&gt;</td>
+                <td>Define metadatos sobre el documento.</td>
+                <td>&lt;meta charset="UTF-8"&gt;</td>
+                <td>Se utiliza para definir el juego de caracteres, palabras clave, autor, etc.</td>
+            </tr>
+            <tr>
+                <td>&lt;link&gt;</td>
+                <td>Define la relación entre el documento actual y un recurso externo.</td>
+                <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+                <td>Comúnmente se usa para vincular hojas de estilo CSS.</td>
+            </tr>
+            <tr>
+                <td>&lt;style&gt;</td>
+                <td>Define estilos CSS para el documento.</td>
+                <td>&lt;style&gt;body { font-family: Arial; }&lt;/style&gt;</td>
+                <td>Contiene reglas CSS que se aplican al documento HTML.</td>
+            </tr>
+            <tr>
+                <td>&lt;script&gt;</td>
+                <td>Define un script de programación, generalmente JavaScript.</td>
+                <td>&lt;script src="script.js"&gt;&lt;/script&gt;</td>
+                <td>Puedes escribir scripts directamente o referenciarlos mediante un archivo externo.</td>
+            </tr>
+            <tr>
+                <td>&lt;noscript&gt;</td>
+                <td>Proporciona contenido alternativo para usuarios que tienen JavaScript desactivado.</td>
+                <td>&lt;noscript&gt;Por favor, habilita JavaScript para ver este contenido.&lt;/noscript&gt;</td>
+                <td>Es útil para mostrar mensajes o contenido alternativo.</td>
+            </tr>
+
+
+            <tr>
+                <td>&lt;data&gt;</td>
+                <td>Asocia un contenido con un valor determinado.</td>
+                <td>&lt;data value="12345"&gt;Código: 12345&lt;/data&gt;</td>
+                <td>Permite asociar datos a un texto.</td>
+            </tr>
+            <tr>
+                <td>&lt;datalist&gt;</td>
+                <td>Proporciona una lista de opciones predefinidas para un control de entrada.</td>
+                <td>&lt;input list="opciones"&gt;&lt;datalist id="opciones"&gt;&lt;option value="Opción 1"&gt;&lt;/datalist&gt;</td>
+                <td>Utilizado con el atributo <code>list</code> en <code>&lt;input&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;dialog&gt;</td>
+                <td>Define un cuadro de diálogo o ventana emergente.</td>
+                <td>&lt;dialog open&gt;Este es un diálogo&lt;/dialog&gt;</td>
+                <td>Puede incluir botones para aceptar o cancelar.</td>
+            </tr>
+            <tr>
+                <td>&lt;menu&gt;</td>
+                <td>Define un grupo de comandos o un menú.</td>
+                <td>&lt;menu&gt;&lt;li&gt;Comando 1&lt;/li&gt;&lt;/menu&gt;</td>
+                <td>Frecuentemente se usa para crear menús contextuales.</td>
+            </tr>
+            <tr>
+                <td>&lt;menuitem&gt;</td>
+                <td>Define un comando en un <code>&lt;menu&gt;</code> que el usuario puede invocar.</td>
+                <td>&lt;menuitem&gt;Comando 1&lt;/menuitem&gt;</td>
+                <td>Este elemento ya no es compatible con HTML5.</td>
+            </tr>
+            <tr>
+                <td>&lt;meter&gt;</td>
+                <td>Representa una medición escalar dentro de un rango conocido, como el nivel de batería.</td>
+                <td>&lt;meter min="0" max="100" value="50"&gt;50%&lt;/meter&gt;</td>
+                <td>Útil para indicar niveles de progreso o rendimiento.</td>
+            </tr>
+            <tr>
+                <td>&lt;progress&gt;</td>
+                <td>Representa el progreso de una tarea en curso.</td>
+                <td>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</td>
+                <td>Se usa para mostrar el estado de una operación en curso.</td>
+            </tr>
+            <tr>
+                <td>&lt;summary&gt;</td>
+                <td>Define un encabezado visible para un elemento <code>&lt;details&gt;</code>.</td>
+                <td>&lt;summary&gt;Detalles&lt;/summary&gt;</td>
+                <td>Al hacer clic en el <code>&lt;summary&gt;</code>, se despliega el contenido de <code>&lt;details&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;details&gt;</td>
+                <td>Define detalles adicionales que el usuario puede ver u ocultar.</td>
+                <td>&lt;details&gt;&lt;summary&gt;Más información&lt;/summary&gt;Este es el contenido oculto&lt;/details&gt;</td>
+                <td>Es útil para crear secciones expandibles o colapsables.</td>
+            </tr>
+            <tr>
+                <td>&lt;time&gt;</td>
+                <td>Representa un valor de fecha u hora.</td>
+                <td>&lt;time datetime="2024-09-10"&gt;10 de Septiembre de 2024&lt;/time&gt;</td>
+                <td>Mejora la semántica temporal en documentos.</td>
+            </tr>
+            <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Resalta texto con importancia o relevancia.</td>
+                <td>&lt;p&gt;Este es un texto &lt;mark&gt;importante&lt;/mark&gt;&lt;/p&gt;</td>
+                <td>Útil para destacar términos clave en un texto.</td>
+            </tr>
+            <tr>
+                <td>&lt;ruby&gt;</td>
+                <td>Proporciona anotaciones de texto en idiomas como el japonés o chino.</td>
+                <td>&lt;ruby&gt;漢&lt;rt&gt;kan&lt;/rt&gt;字&lt;rt&gt;ji&lt;/rt&gt;&lt;/ruby&gt;</td>
+                <td>Contiene elementos <code>&lt;rt&gt;</code> para definir la pronunciación.</td>
+            </tr>
+            <tr>
+                <td>&lt;rt&gt;</td>
+                <td>Define la anotación o pronunciación en un texto <code>&lt;ruby&gt;</code>.</td>
+                <td>&lt;ruby&gt;漢&lt;rt&gt;kan&lt;/rt&gt;字&lt;rt&gt;ji&lt;/rt&gt;&lt;/ruby&gt;</td>
+                <td>Se usa dentro de <code>&lt;ruby&gt;</code> para mostrar la lectura.</td>
+            </tr>
+            <tr>
+                <td>&lt;rbc&gt;</td>
+                <td>Define el contenedor de texto base en una anotación ruby.</td>
+                <td>&lt;ruby&gt;&lt;rbc&gt;漢字&lt;/rbc&gt;&lt;/ruby&gt;</td>
+                <td>Es parte de la estructura de anotaciones ruby.</td>
+            </tr>
+            <tr>
+                <td>&lt;rp&gt;</td>
+                <td>Proporciona contenido adicional para navegadores que no soportan <code>&lt;ruby&gt;</code>.</td>
+                <td>&lt;ruby&gt;漢&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;</td>
+                <td>Mejora la compatibilidad de <code>&lt;ruby&gt;</code> en navegadores antiguos.</td>
+            </tr>
+            <tr>
+                <td>&lt;bdi&gt;</td>
+                <td>Permite aislar una porción de texto que podría cambiar la dirección del texto.</td>
+                <td>&lt;bdi&gt;Texto de derecha a izquierda&lt;/bdi&gt;</td>
+                <td>Es útil para manejar textos que tienen diferente dirección de escritura.</td>
+            </tr>
+            <tr>
+                <td>&lt;bdo&gt;</td>
+                <td>Anula la dirección del texto, permitiendo un control específico.</td>
+                <td>&lt;bdo dir="rtl"&gt;Texto en dirección contraria&lt;/bdo&gt;</td>
+                <td>Útil para escribir textos en direcciones opuestas, como en árabe o hebreo.</td>
+            </tr>
+            <tr>
+                <td>&lt;wbr&gt;</td>
+                <td>Indica un posible punto de quiebre de línea en el texto.</td>
+                <td>&lt;p&gt;Este es un texto con un &lt;wbr&gt;quiebre de línea&lt;/p&gt;</td>
+                <td>Útil para controlar cómo se visualizan los textos largos.</td>
+            </tr>
+            <tr>
+                <td>&lt;ins&gt;</td>
+                <td>Define un texto que ha sido insertado en el documento.</td>
+                <td>&lt;p&gt;Este es un &lt;ins&gt;texto insertado&lt;/ins&gt; en el párrafo.&lt;/p&gt;</td>
+                <td>Por lo general, se muestra subrayado.</td>
+            </tr>
+            <tr>
+                <td>&lt;del&gt;</td>
+                <td>Define un texto que ha sido eliminado del documento.</td>
+                <td>&lt;p&gt;Este es un &lt;del&gt;texto eliminado&lt;/del&gt; en el párrafo.&lt;/p&gt;</td>
+                <td>Por lo general, se muestra tachado.</td>
+            </tr>
+            <tr>
+                <td>&lt;template&gt;</td>
+                <td>Define un fragmento de contenido HTML que puede ser clonado e insertado en el documento.</td>
+                <td>&lt;template&gt;&lt;p&gt;Este es un contenido de plantilla.&lt;/p&gt;&lt;/template&gt;</td>
+                <td>No se renderiza hasta ser insertado dinámicamente en el DOM.</td>
+            </tr>
+            <tr>
+                <td>&lt;slot&gt;</td>
+                <td>Define un espacio donde se puede insertar contenido en componentes web personalizados.</td>
+                <td>&lt;slot name="header"&gt;&lt;/slot&gt;</td>
+                <td>Utilizado en componentes web para distribuir contenido.</td>
+            </tr>
+            <tr>
+                <td>&lt;picture&gt;</td>
+                <td>Define un contenedor para varios elementos <code>&lt;source&gt;</code> y una imagen de respaldo.</td>
+                <td>&lt;picture&gt;&lt;source srcset="imagen.webp" type="image/webp"&gt;&lt;img src="imagen.jpg" alt="Descripción"&gt;&lt;/picture&gt;</td>
+                <td>Permite elegir diferentes imágenes según las capacidades del navegador.</td>
+            </tr>
+            
+            <tr>
+                <td>&lt;source&gt;</td>
+                <td>Define múltiples recursos multimedia para elementos <code>&lt;picture&gt;</code>, <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code>.</td>
+                <td>&lt;source src="video.mp4" type="video/mp4"&gt;</td>
+                <td>Permite especificar recursos alternativos para diferentes tipos o formatos de contenido.</td>
+            </tr>
+            <tr>
+                <td>&lt;track&gt;</td>
+                <td>Define pistas de texto adicionales para elementos <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code>.</td>
+                <td>&lt;track kind="subtitles" src="subtitulos.vtt" srclang="es" label="Español"&gt;</td>
+                <td>Útil para subtítulos, descripciones de audio, y más.</td>
+            </tr>
+            <tr>
+                <td>&lt;caption&gt;</td>
+                <td>Proporciona un título o descripción para una tabla.</td>
+                <td>&lt;table&gt;&lt;caption&gt;Título de la tabla&lt;/caption&gt;&lt;/table&gt;</td>
+                <td>Especifica la descripción de la tabla, generalmente en la parte superior.</td>
+            </tr>
+            <tr>
+                <td>&lt;col&gt;</td>
+                <td>Especifica propiedades de estilo para una o más columnas en una tabla.</td>
+                <td>&lt;col span="2" style="background-color: lightblue"&gt;</td>
+                <td>Útil para aplicar estilos a columnas específicas de una tabla.</td>
+            </tr>
+            <tr>
+                <td>&lt;colgroup&gt;</td>
+                <td>Define un grupo de una o más columnas dentro de una tabla para aplicarle estilos.</td>
+                <td>&lt;colgroup&gt;&lt;col style="background-color: red"&gt;&lt;/colgroup&gt;</td>
+                <td>Se usa en combinación con <code>&lt;col&gt;</code> para agrupar columnas con estilos comunes.</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>Agrupa el contenido del encabezado de una tabla.</td>
+                <td>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Encabezado&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</td>
+                <td>Útil para definir el encabezado de una tabla con varias filas de datos.</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>Agrupa el contenido del cuerpo de una tabla.</td>
+                <td>&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Contenido&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;</td>
+                <td>Define la sección del cuerpo de la tabla, generalmente debajo de <code>&lt;thead&gt;</code>.</td>
+            </tr>
+            <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>Define un pie de tabla con información resumida o cálculos.</td>
+                <td>&lt;tfoot&gt;&lt;tr&gt;&lt;td&gt;Resumen&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;</td>
+                <td>Generalmente se coloca después de <code>&lt;tbody&gt;</code> para resumir los datos de la tabla.</td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>Define una celda de encabezado en una tabla.</td>
+                <td>&lt;th&gt;Encabezado&lt;/th&gt;</td>
+                <td>Generalmente se muestra en negrita y centrado.</td>
+            </tr>
+            <tr>
+                <td>&lt;optgroup&gt;</td>
+                <td>Agrupa opciones dentro de un <code>&lt;select&gt;</code>.</td>
+                <td>&lt;optgroup label="Grupo 1"&gt;&lt;option&gt;Opción 1&lt;/option&gt;&lt;/optgroup&gt;</td>
+                <td>Permite organizar opciones dentro de un menú desplegable.</td>
+            </tr>
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Agrupa elementos relacionados en un formulario.</td>
+                <td>&lt;fieldset&gt;&lt;legend&gt;Información Personal&lt;/legend&gt;&lt;input type="text" name="nombre"&gt;&lt;/fieldset&gt;</td>
+                <td>Generalmente utilizado con <code>&lt;legend&gt;</code> para etiquetar el grupo.</td>
+            </tr>
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Proporciona un título o leyenda para un elemento <code>&lt;fieldset&gt;</code>.</td>
+                <td>&lt;legend&gt;Información Personal&lt;/legend&gt;</td>
+                <td>Se coloca dentro de <code>&lt;fieldset&gt;</code> para describir el contenido agrupado.</td>
+            </tr>
+            <tr>
+                <td>&lt;output&gt;</td>
+                <td>Representa el resultado de un cálculo o acción del usuario.</td>
+                <td>&lt;output name="resultado"&gt;0&lt;/output&gt;</td>
+                <td>Se puede usar con scripts para mostrar resultados de operaciones.</td>
+            </tr>
+            <tr>
+                <td>&lt;embed&gt;</td>
+                <td>Incrusta un contenido externo como un archivo multimedia o una aplicación.</td>
+                <td>&lt;embed src="archivo.pdf" type="application/pdf" width="600" height="500"&gt;</td>
+                <td>Se usa para incrustar aplicaciones o contenidos externos en un documento HTML.</td>
+            </tr>
+            
+               
+            
+
+        </tbody>
+    </table>
+
+</body>
+</html>
